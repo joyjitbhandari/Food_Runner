@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashScreen"
+    android:background="@color/Page_Color">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/applogo" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:hint=" Number (10 Digit)"
+        android:drawableStart="@drawable/ic_mobile"
+        android:drawablePadding="10dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        android:padding="10dp"
+        android:maxLength="10"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUsername"
+        android:hint=" Password"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="10dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/butLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@color/Button_Color"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:textColor="@color/Buttontext_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/etPassword"/>
+
+    <TextView
+        android:id="@+id/txtForgtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butLogin"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/Text_Color"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtDonthaveAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have any Account?Sing up Now"
+        android:textColor="@color/Text_Color"
+        android:textSize="18sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
